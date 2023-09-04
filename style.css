@@ -1,66 +1,68 @@
 * {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
 }
 
 .flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 main {
-    width: 100vw;
-    height: 100vh;
-    background-image: url("./assets/retro_city.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("./assets/retro_city.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 #command {
-    position: absolute;
-    top: 0;
-    left: 0;
-    color: #fff;
-    margin: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  margin: 5px;
 }
 .bash {
-    position: relative;
-    background-color: #02000e;
-    width: 80%;
-    height: 80%;
+  border-radius: 8px;
+  width: 80%;
+  height: 80%;
+  background-color: rgba(2, 0, 14, 0.6); /* Cor de fundo com transparência */
+  backdrop-filter: blur(10px); /* Aplica o efeito de desfoque */
 }
+
 @media (max-width: 500px) {
-    .bash {
-        width: 100%;
-        height: 100%;
-    }
+  .bash {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 li {
-    width: 350px;
-    height: 45px;
-    border-radius: 4px;
-    background-color: rgba(22, 22, 22, 0.6);
-    margin: 15px 0;
-    border: 2px solid #08d1f8;
-    transition: 0.3s;
+  width: 350px;
+  height: 45px;
+  border-radius: 4px;
+  background-color: rgba(22, 22, 22, 0.6);
+  margin: 15px 0;
+  border: 2px solid #08d1f8;
+  transition: 0.3s;
 }
 @media (max-width: 500px) {
-    li {
-        width: 250px;
-    }
+  li {
+    width: 250px;
+  }
 }
 li:hover {
-    cursor: pointer;
-    transform: translateY(-2px);
+  cursor: pointer;
+  transform: translateY(-2px);
 }
 
 li a {
-    width: 100%;
-    height: 100%;
-    color: #fff;
+  width: 100%;
+  height: 100%;
+  color: #fff;
 }
